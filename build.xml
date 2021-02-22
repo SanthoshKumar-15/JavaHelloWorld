@@ -1,0 +1,12 @@
+<project name="Hello World" basedir=".">
+
+<target name="compile">
+       <javac srcdir="." includeantruntime="true" includes="HelloWorld.java" destdir="."></javac>
+</target>
+
+<target name="run" depends="compile">
+       <java classname="HelloWorld" fork="true"></java>
+</target>
+
+</project>
+
